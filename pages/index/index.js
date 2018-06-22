@@ -9,10 +9,20 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
+  /** 
+   * @description 头像点击
+   */
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  /**
+   * @description 开始使用点击
+   */
+  clickStartBtn() {
+    wx.navigateTo({
+      url: '../start/start'
     })
   },
   onLoad: function () {

@@ -1,6 +1,10 @@
-<!--logs.wxml-->
-<view class="container log-list" bind:touchstart="tapLogs">
-  <block wx:for="{{logs}}" wx:for-item="log" wx:key="log">
-    <text bindtap="tapLogs" class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<!--start.wxml-->
+<view class="start-top-bar">
+  <i class="expand-icon"></i>
+  <div class="title"></div>
+  <icon class="search-icon"></icon>
 </view>
+<view>
+  <image src="https://images.samsung.com/is/image/samsung/p5/cn/homepage/720x405-4.jpg?$ORIGIN_JPG$"></image>
+</view>
+<button bindtap="getLocation">获取地址</button>

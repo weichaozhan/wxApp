@@ -5,15 +5,20 @@ Page({
   data: {
     logs: []
   },
-  onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
-  },
-  tapLogs: function(e) {
+  getLocation(e) {
     console.log(e)
-    // wx.scanCode()
+    wx.getLocation({
+      type: 'gcj02',
+      success: function (res) {
+        let latitude = res.latitude
+        let longitude = res.longitude
+
+        wx.openLocation({
+          latitude: latitude,
+          longitude: longitude,
+          scale: 28
+        })
+      }
+    })
   }
 })

@@ -1,8 +1,25 @@
-.log-list {
+.start-top-bar {
+  margin-bottom: 20px;
+  height: 64px;
   display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+  justify-content: space-around;
+  align-items: center;
 }
-.log-item {
-  margin: 10rpx;
+.expand-icon {
+  width: 24px;
+  height: 24px;
+  background: url('https://cdn.samsung.com/etc/designs/smg/global/imgs/sp-gnb-mo.png') 0 -24px no-repeat;
+  background-size:149px;
+}
+.title {
+  width: 140px;
+  height: 24px;
+  background: url('https://cdn.samsung.com/etc/designs/smg/global/imgs/sp-gnb-mo.png') no-repeat;
+  background-size:149px;
+}
+.search-icon {
+  width: 24px;
+  height: 24px;
+  background: url('https://cdn.samsung.com/etc/designs/smg/global/imgs/sp-gnb-mo.png') 0 -48px no-repeat;
+  background-size:149px;
 }

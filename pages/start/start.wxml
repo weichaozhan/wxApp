@@ -1,6 +1,6 @@
 <!--start.wxml-->
 <view class="start-top-bar">
-  <i class="expand-icon"></i>
+  <i class="expand-icon" bindtap="useCamera"></i>
   <div class="title"></div>
   <icon class="search-icon"></icon>
 </view>
